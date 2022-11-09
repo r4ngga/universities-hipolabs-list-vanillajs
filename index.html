@@ -307,7 +307,10 @@
                 }
               if(response.length > 0)
               {                  
-                
+                  const qtymuch = document.createElement('p');
+                  qtymuch.className = 'p-2 mt-4 max-w-2xl text-sm text-gray-700';
+                  qtymuch.textContent = `Total Universities ${response.length}`;
+                  showuniv.appendChild(qtymuch);
                   for(let x = 0; x < response.length; x++){
 
                     listcard = document.createElement('div');
